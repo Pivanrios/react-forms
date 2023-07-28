@@ -1,8 +1,10 @@
-
+import { useState } from "react"
 
 export default function SignUpForm(){
     //handlers
-
+    const [username, setUserName] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState(null);
 
     //jsx
     return(
