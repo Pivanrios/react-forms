@@ -23,7 +23,8 @@ export default function SignUpForm(){
     //jsx
     return(
         <form action="" onSubmit={handleSubmit}>
-            <h3>Sign up Form</h3>
+            <h2>Sign up Form</h2>
+            {error && <p>error</p>}
             <label> Username:{""}
                 <input 
                 type="text" 
@@ -32,7 +33,7 @@ export default function SignUpForm(){
             </label>
             <label> Password:
                 <input 
-                type="text"
+                type="password"
                 value={password}
                 onChange={e=> setPassword(e.target.value)} />
             </label>
